@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "OpenShift помощник",
+  "description": "Помощник для работы с OpenShift ППРБ, добавляющий вкладку Resources вместо Operators с часто используемыми сущностями Istio, даёт возможность ввода текста для поиска без активации поля Search, и при загрузке страницы раскрывает Resources, Workloads, Networking для более удобной работы",
+  "version": "1.0.0",
+  "icons": {
+    "190": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/k8s/*", "*://*/login?then=*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["activeTab", "tabs", "notifications"]
+}

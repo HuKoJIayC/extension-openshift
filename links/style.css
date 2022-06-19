@@ -1,0 +1,59 @@
+* {
+    font-family: 'Century Gothic', Arial, sans-serifn;
+    color: #fff;
+}
+
+body {
+    background-color: gray;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.table-small {
+    width: 45%;
+}
+
+caption {
+    font-size: 30px;
+    color: gainsboro;
+}
+
+button {
+    background-color: honeydew;
+    border: none;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width: 180px;
+    height: 90px;
+}
+
+.button-os {
+    background-color: #363636;
+}
+
+.button-work {
+    background-color: #0747a6;
+}
+
+.button-nexus {
+    background-color: #29b473;
+}
+
+.button-jenkins {
+    background-color: #000;
+}
+
+.button-grafana {
+    background-color: #e55400;
+}
